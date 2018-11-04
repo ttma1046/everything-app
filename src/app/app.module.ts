@@ -2,17 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
-import { WizardComponent } from './wizard/wizard.component';
+import { MyShareLibModule } from './../../projects/my-share-lib/src/lib/my-share-lib.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyDashboardComponent,
-    WizardComponent
+    MyDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +22,8 @@ import { WizardComponent } from './wizard/wizard.component';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    LayoutModule
+    LayoutModule,
+    MyShareLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
