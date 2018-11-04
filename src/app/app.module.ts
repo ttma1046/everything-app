@@ -15,7 +15,7 @@ import { MyShareLibModule } from './../../projects/my-share-lib/src/lib/my-share
     MyDashboardComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     MatGridListModule,
     MatCardModule,
