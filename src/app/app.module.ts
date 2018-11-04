@@ -6,11 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
+import { WizardComponent } from './wizard/wizard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyDashboardComponent
+    MyDashboardComponent,
+    WizardComponent
   ],
   imports: [
     BrowserModule,

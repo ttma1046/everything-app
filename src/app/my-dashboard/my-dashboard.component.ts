@@ -3,7 +3,7 @@ import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-my-dashboard',
+  selector: 'my-dashboard',
   templateUrl: './my-dashboard.component.html',
   styleUrls: ['./my-dashboard.component.css'],
 })
@@ -16,8 +16,7 @@ export class MyDashboardComponent {
           { title: 'Card 1', cols: 1, rows: 1 },
           { title: 'Card 2', cols: 1, rows: 1 },
           { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
-        ];
+          { title: 'Card 4', cols: 1, rows: 1 } ];
       }
 
       return [
