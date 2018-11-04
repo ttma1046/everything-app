@@ -131,6 +131,41 @@
           }
         }
       }
+    },
+    "my-share-lib": {
+      "root": "projects/my-share-lib",
+      "sourceRoot": "projects/my-share-lib/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/my-share-lib/tsconfig.lib.json",
+            "project": "projects/my-share-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/my-share-lib/src/test.ts",
+            "tsConfig": "projects/my-share-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/my-share-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/my-share-lib/tsconfig.lib.json",
+              "projects/my-share-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "everything-app"
